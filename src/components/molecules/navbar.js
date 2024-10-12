@@ -18,7 +18,7 @@ function Navegacion() {
                         />
                         {''}
                     </Navbar.Brand>
-                    <Nav className="ms-5" style={{ fontFamily: '"Afacad Flux", sans-serif' }}>
+                    <Nav style={{ fontFamily: '"Afacad Flux", sans-serif', marginRight: '5%' }}>
                         <Nav.Link className="fs-5" href="#">Equipos</Nav.Link>
                         <Nav.Link className="fs-5" href="#">Nutec</Nav.Link>
                         <Nav.Link className="fs-5" href="#">Servicio técnico</Nav.Link>
