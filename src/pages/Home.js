@@ -1,4 +1,5 @@
 import { Button } from "../components/atoms/index.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     return (
@@ -10,4 +11,3 @@ const Home = () => {
 };
 
 export default Home;
-  
