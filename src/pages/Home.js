@@ -1,14 +1,18 @@
-import { Button } from "../components/atoms/index.js";
+import Tittle from "../components/atoms/TittleProducs";
+import BannerSection from "../components/molecules/BannerEncabezado";
+import Products from "../components/molecules/SectionProducts";
+
 import Navegacion from "../components/molecules/navbar.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navegacion />
-            <h1>Home Page</h1>
-            <Button>Shop Now</Button>
-        </div>
+            <BannerSection />
+            <Tittle />
+            <Products />
+        </>
     );
 };
 

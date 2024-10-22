@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home, Products, Checkout, Contact } from '../pages/index.js';
 
 
+
 const AppRoutes = () => {
     return (
         <Router>
