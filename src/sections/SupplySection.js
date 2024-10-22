@@ -1,29 +1,28 @@
 import React from 'react';
-import ProductCard from './ProductCard';
 
-const Products = () => {
+const SupplySection = () => {
     return (
         <>
             <seccion>
                 <div className="contenedor-superior">
                     <div className="tintas" >
-                        <ProductCard />
+                        <strong>Tintas</strong>
                     </div>
                     <div className="otros">
                         <div className="equipos">
-                            <ProductCard />
+                            <strong>Equipos</strong>
                         </div>
                         <div className="servicio-tecnico">
-                            <ProductCard />
+                            <strong>Servicio Técnico</strong>
                         </div>
                     </div>
                 </div>
                 <div className="contenedor-inferior">
-                    <ProductCard />
+                    <strong>Insumos para Impresión</strong>
                 </div>
             </seccion>
         </>
     );
 };
 
-export default Products
+export default SupplySection

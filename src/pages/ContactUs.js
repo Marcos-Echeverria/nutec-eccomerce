@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Formulario from '../components/molecules/Form';
+import { ContactForm } from '../components/molecules/index.js' 
+import { SocialButton } from '../components/atoms/index.js' 
 import { Mail, Phone, MapPin, } from 'lucide-react';
-import Social from '../components/atoms/SocialButton';
 
 
-const Contact = () => {
+const ContactUs = () => {
     return (
         <Container fluid className="d-flex justify-content-center align-items-center py-5 rounded-3"
             style={{
@@ -48,8 +48,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="mt-auto" style={{ marginBottom: '1rem', marginLeft: '1rem' }} >
-                        <Social />
-
+                        <SocialButton />
                     </div>
                 </Col>
 
@@ -62,12 +61,11 @@ const Contact = () => {
                         backgroundColor: 'rgba(255, 255, 255, 0.5)', // Color de fondo con transparencia
                     }}
                     md={7} className="bg-white p-4">
-                    <Formulario />
-
+                    <ContactForm />
                 </Col>
             </Row>
         </Container>
     );
 };
 
-export default Contact;
+export default ContactUs;

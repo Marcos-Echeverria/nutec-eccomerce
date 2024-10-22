@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, Form, Button, Alert } from 'react-bootstrap';
 
-const Formulario = () => {
+const ContactForm = () => {
     const [focusedInput, setFocusedInput] = useState(null);
     const [formData, setFormData] = useState({
         nombre: '',
@@ -200,4 +200,4 @@ const Formulario = () => {
     );
 };
 
-export default Formulario;
+export default ContactForm;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
-function Social() {
+function SocialButton() {
     const [hoveredButton, setHoveredButton] = useState(null);
 
     const handleMouseEnter = (icon) => {
@@ -64,4 +64,4 @@ function Social() {
     );
 }
 
-export default Social;
+export default SocialButton;
