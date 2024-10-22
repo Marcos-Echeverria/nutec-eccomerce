@@ -27,6 +27,7 @@ const Hero = () => {
                                 <Button
                                     variant="dark"
                                     className="px-4 py-3 mt-3 hero-button"
+                                    href="#supply-section"
                                 >
                                     <span className="h5 m-0 text-white">Más información</span>
                                 </Button>

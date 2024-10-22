@@ -53,7 +53,7 @@ function SocialButton() {
                 style={{ backgroundColor: '#F6AF03' }}
                 onMouseEnter={() => handleMouseEnter('whatsapp')}
                 onMouseLeave={handleMouseLeave}
-                onClick={() => openLink('https://wa.me/5491163980209')}
+                onClick={() => openLink('https://wa.me/5491123751804')}
             >
                 <FaWhatsapp
                     color={hoveredButton === 'whatsapp' ? 'black' : 'white'}

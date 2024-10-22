@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home, Products, Services, Supplies, ContactUs } from '../pages/index.js';
-import { Header } from "../components/molecules/index.js";
+import { Header, Footer } from "../components/molecules/index.js";
 import { ScrollToTop } from "../components/atoms/index.js";
 
 
@@ -17,6 +17,7 @@ const AppRoutes = () => {
                 <Route path="/supplies" element={<Supplies />} />
                 <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };
