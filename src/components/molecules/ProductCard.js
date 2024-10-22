@@ -33,7 +33,7 @@ const ProductPrice = styled.p`
     margin: 8px 0;
 `;
 
-const ProductCard = ({ title, description, imageUrl, price  }) => {
+const ProductCard = ({ title, description, imageUrl, price }) => {
     return (
         <Card>
             <ProductImage src={imageUrl} alt={title} />

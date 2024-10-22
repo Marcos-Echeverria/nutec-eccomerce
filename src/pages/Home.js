@@ -1,13 +1,13 @@
-import { Button } from "../components/atoms/index.js";
+import { Hero, SupplySection, ProductGallery } from "../sections/index.js";
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
-            <Button>Shop Now</Button>
-        </div>
+        <>
+            <Hero />
+            <SupplySection />
+            <ProductGallery />
+        </>
     );
 };
 
 export default Home;
-  
