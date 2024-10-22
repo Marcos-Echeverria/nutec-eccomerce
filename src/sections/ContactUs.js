@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, } from 'lucide-react';
 
 const ContactUs = () => {
     return (
-        <Container fluid className="d-flex justify-content-center align-items-center py-5 rounded-3"
+        <Container id='contact-us' fluid className="d-flex justify-content-center align-items-center py-5"
             style={{
                 backgroundImage: "url('/GenteFelizColores.jpeg')",
                 backgroundSize: 'cover',

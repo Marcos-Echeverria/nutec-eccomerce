@@ -44,7 +44,7 @@ const ProductGallery = () => {
                                     width: '100%',
                                     padding: '20px',
                                     backgroundColor: '#ffffff',  // Fondo blanco
-                                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.005)', // Sombras suaves y leves en los bordes
+                                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.005)', // Sombras suaves y leves en los bordes
                                     borderRadius: '12px', // Bordes redondeados para suavizar el diseño
                                     overflow: 'hidden',
                                 }}

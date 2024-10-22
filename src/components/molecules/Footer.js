@@ -45,7 +45,7 @@ export const Footer = () => {
                                 target="_blank"  // Abrir en nueva pestaña
                                 rel="noopener noreferrer"  // Buena práctica de seguridad
                                 className="p-2 mx-2"
-                                style={{ borderRadius: '50%', width: '40px', height: '40px' }}  // Agrandar tamaño de los botones
+                                style={{ borderRadius: '50%', width: '40px', height: '40px', textDecoration: 'none' }}  // Agrandar tamaño de los botones
                             >
                                 <CDBIcon fab icon="facebook-f" style={{ color: 'black', fontSize: '20px' }} />  {/* Ícono en negro */}
                             </CDBBtn>
@@ -57,7 +57,7 @@ export const Footer = () => {
                                 target="_blank"  // Abrir en nueva pestaña
                                 rel="noopener noreferrer"  // Buena práctica de seguridad
                                 className="p-2 mx-2"
-                                style={{ borderRadius: '50%', width: '40px', height: '40px' }}  // Agrandar tamaño de los botones
+                                style={{ borderRadius: '50%', width: '40px', height: '40px', textDecoration: 'none' }}  // Agrandar tamaño de los botones
                             >
                                 <CDBIcon fab icon="whatsapp" style={{ color: 'black', fontSize: '20px' }} />  {/* Ícono en negro */}
                             </CDBBtn>
@@ -69,7 +69,7 @@ export const Footer = () => {
                                 target="_blank"  // Abrir en nueva pestaña
                                 rel="noopener noreferrer"  // Buena práctica de seguridad
                                 className="p-2 mx-2"
-                                style={{ borderRadius: '50%', width: '40px', height: '40px' }}  // Agrandar tamaño de los botones
+                                style={{ borderRadius: '50%', width: '40px', height: '40px', textDecoration: 'none' }}  // Agrandar tamaño de los botones
                             >
                                 <CDBIcon fab icon="instagram" style={{ color: 'black', fontSize: '20px' }} />  {/* Ícono en negro */}
                             </CDBBtn>
