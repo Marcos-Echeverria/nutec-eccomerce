@@ -1,19 +1,18 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Importamos Link
-import Layout from '../components/molecules/Layout'; // Usamos el layout común
+import { Link } from 'react-router-dom';
+import Layout from '../components/molecules/Layout';
 
 const SupplySection = () => {
     return (
         <div className="position-relative">
-            {/* Blur en la parte superior */}
             <div
                 className="blur-effect position-absolute w-100"
                 style={{
-                    top: '-30px',    // Posición por encima del contenido
-                    height: '40px', // Altura del blur
-                    background: 'linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5))', // Degradado hacia arriba
-                    filter: 'blur(20px)', // Aplicar desenfoque
+                    top: '-30px',
+                    height: '40px',
+                    background: 'linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5))',
+                    filter: 'blur(20px)',
                     zIndex: 1
                 }}
             ></div>
@@ -22,60 +21,62 @@ const SupplySection = () => {
                 <h2 className="text-center mt-5 mb-4" style={{ fontWeight: '700', textShadow: '2px 2px 3px rgba(0, 0, 0, 0.3)' }}>Nuestros Productos</h2>
 
                 <Row className="mb-4">
-                    {/* Tintas */}
                     <Col md={6} className="mb-4">
                         <div
                             className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                             style={{
-                                minHeight: '60vh',    // Incremento de altura mínima
-                                height: 'calc(1044 / 952 * 55vw)', // Relación de aspecto 1044x952 en pantallas grandes
+                                minHeight: '60vh',
+                                height: 'calc(1044 / 952 * 55vw)',
                                 backgroundImage: 'url(/Camaleon.jpg)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                             }}
                         >
-                            <div>
+                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
                                 <strong className="fs-3 d-block mb-2">Tintas Nutec</strong>
                                 <p className="mb-4">La tinta Nutec es una tinta de calidad premium, que ofrece el más alto nivel de estabilidad de impresión.</p>
-                                <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link> {/* Link a /products */}
+                                <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                             </div>
                         </div>
                     </Col>
 
-                    {/* Equipos y Servicio Técnico */}
                     <Col md={6} className="d-flex flex-column">
                         <Row className="mb-4">
-                            {/* Equipos */}
                             <Col md={12} className="mb-4">
                                 <div
-                                    className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                                    className="Equipos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                                     style={{
-                                        minHeight: '35vh',  // Incremento de altura mínima
-                                        height: 'calc(500 / 687 * 55vw)', // Relación de aspecto 687x500
+                                        minHeight: '35vh',
+                                        height: 'calc(500 / 687 * 55vw)',
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat',
                                     }}
                                 >
-                                    <div>
+                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
                                         <strong className="fs-3 d-block mb-2">Equipos</strong>
                                         <p className="mb-4">Trabajamos con tecnología de vanguardia que garantiza precisión y confiabilidad.</p>
-                                        <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link> {/* Link a /products */}
+                                        <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                                     </div>
                                 </div>
                             </Col>
 
-                            {/* Servicio Técnico */}
                             <Col md={12}>
                                 <div
-                                    className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                                    className="Servicio-tecnico bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                                     style={{
-                                        minHeight: '35vh',  // Incremento de altura mínima
-                                        height: 'calc(500 / 687 * 55vw)', // Relación de aspecto 687x500
+                                        minHeight: '35vh',
+                                        height: 'calc(500 / 687 * 55vw)',
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat',
                                     }}
                                 >
-                                    <div>
+                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
                                         <strong className="fs-3 d-block mb-2">Servicio Técnico</strong>
                                         <p className="mb-4">Ofrecemos un servicio técnico especializado para garantizar el óptimo funcionamiento de nuestros equipos.</p>
-                                        <Link to="/services" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link> {/* Link a /services */}
+                                        <Link to="/services" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                                     </div>
                                 </div>
                             </Col>
@@ -83,20 +84,22 @@ const SupplySection = () => {
                     </Col>
                 </Row>
 
-                {/* Insumos para Impresión */}
                 <Row>
                     <Col md={12}>
                         <div
-                            className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                            className="Insumos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                             style={{
-                                minHeight: '35vh',   // Incremento de altura mínima
-                                height: 'calc(500 / 1676 * 100vw)',  // Relación de aspecto 1676x500
+                                minHeight: '35vh',
+                                height: 'calc(500 / 1676 * 100vw)',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
                             }}
                         >
-                            <div>
+                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
                                 <strong className="fs-3 d-block mb-2">Insumos para Impresión</strong>
                                 <p className="mb-4">Ofrecemos una amplia gama de insumos para impresión de alta calidad.</p>
-                                <Link to="/supplies" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link> {/* Link a /supplies */}
+                                <Link to="/supplies" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                             </div>
                         </div>
                     </Col>

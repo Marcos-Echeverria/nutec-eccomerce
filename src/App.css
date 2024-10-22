@@ -87,3 +87,15 @@ body {
 .underline-yellow:hover::after {
     width: 100%;
 }
+
+.Equipos {
+    background-image: url(./assets/images/platinum.webp);
+}
+
+.Servicio-tecnico{
+    background-image: url(./assets/images/ServicioTecnico.webp);
+}
+
+.Insumos{
+    background-image: url(./assets/images/Insumos.webp);
+}
