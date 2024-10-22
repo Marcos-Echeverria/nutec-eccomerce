@@ -2,9 +2,6 @@ import { Button } from "../components/atoms/index.js";
 import Navegacion from "../components/molecules/navbar.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
 const Home = () => {
     return (
         <div>
