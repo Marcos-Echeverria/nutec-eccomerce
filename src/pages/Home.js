@@ -1,4 +1,4 @@
-import { Hero, SupplySection, ProductGallery, Brand, Footer } from "../sections/index.js";
+import { Hero, SupplySection, ProductGallery, Brand } from "../sections/index.js";
 
 
 const Home = () => {
@@ -8,7 +8,6 @@ const Home = () => {
             <SupplySection />
             <ProductGallery />
             <Brand />
-            <Footer />
         </>
     );
 };

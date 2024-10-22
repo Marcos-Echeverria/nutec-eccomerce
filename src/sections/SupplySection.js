@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Layout from '../components/molecules/Layout';
+import { Layout } from '../components/molecules/index.js'
 
 const SupplySection = () => {
     return (
-        <div className="position-relative">
+        <div className="position-relative" id="supply-section">
             <div
                 className="blur-effect position-absolute w-100"
                 style={{
@@ -23,7 +23,7 @@ const SupplySection = () => {
                 <Row className="mb-4">
                     <Col md={6} className="mb-4">
                         <div
-                            className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                            className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end position-relative"
                             style={{
                                 minHeight: '60vh',
                                 height: 'calc(1044 / 952 * 55vw)',
@@ -33,9 +33,22 @@ const SupplySection = () => {
                                 backgroundRepeat: 'no-repeat',
                             }}
                         >
-                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
+                            {/* Overlay div */}
+                            <div className="overlay" style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%',
+                                backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                                zIndex: 1,
+                                borderRadius: 'inherit'
+                            }}></div>
+
+                            {/* Contenido del card */}
+                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)', zIndex: 2 }}>
                                 <strong className="fs-3 d-block mb-2">Tintas Nutec</strong>
-                                <p className="mb-4">La tinta Nutec es una tinta de calidad premium, que ofrece el más alto nivel de estabilidad de impresión.</p>
+                                <p className="mb-4" style={{ fontWeight: '600' }}>La tinta Nutec es una tinta de calidad premium, que ofrece el más alto nivel de estabilidad de impresión.</p>
                                 <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                             </div>
                         </div>
@@ -45,7 +58,7 @@ const SupplySection = () => {
                         <Row className="mb-4">
                             <Col md={12} className="mb-4">
                                 <div
-                                    className="Equipos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                                    className="Equipos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end position-relative"
                                     style={{
                                         minHeight: '35vh',
                                         height: 'calc(500 / 687 * 55vw)',
@@ -54,9 +67,20 @@ const SupplySection = () => {
                                         backgroundRepeat: 'no-repeat',
                                     }}
                                 >
-                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
+                                    <div className="overlay" style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                                        zIndex: 1,
+                                        borderRadius: 'inherit'
+                                    }}></div>
+
+                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)', zIndex: 2 }}>
                                         <strong className="fs-3 d-block mb-2">Equipos</strong>
-                                        <p className="mb-4">Trabajamos con tecnología de vanguardia que garantiza precisión y confiabilidad.</p>
+                                        <p className="mb-4" style={{ fontWeight: '600' }}>Trabajamos con tecnología de vanguardia que garantiza precisión y confiabilidad.</p>
                                         <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                                     </div>
                                 </div>
@@ -64,7 +88,7 @@ const SupplySection = () => {
 
                             <Col md={12}>
                                 <div
-                                    className="Servicio-tecnico bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                                    className="Servicio-tecnico bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end position-relative"
                                     style={{
                                         minHeight: '35vh',
                                         height: 'calc(500 / 687 * 55vw)',
@@ -73,9 +97,20 @@ const SupplySection = () => {
                                         backgroundRepeat: 'no-repeat',
                                     }}
                                 >
-                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
+                                    <div className="overlay" style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                                        zIndex: 1,
+                                        borderRadius: 'inherit'
+                                    }}></div>
+
+                                    <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)', zIndex: 2 }}>
                                         <strong className="fs-3 d-block mb-2">Servicio Técnico</strong>
-                                        <p className="mb-4">Ofrecemos un servicio técnico especializado para garantizar el óptimo funcionamiento de nuestros equipos.</p>
+                                        <p className="mb-4" style={{ fontWeight: '600' }}>Ofrecemos un servicio técnico especializado para garantizar el óptimo funcionamiento de nuestros equipos.</p>
                                         <Link to="/services" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                                     </div>
                                 </div>
@@ -87,7 +122,7 @@ const SupplySection = () => {
                 <Row>
                     <Col md={12}>
                         <div
-                            className="Insumos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
+                            className="Insumos bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end position-relative"
                             style={{
                                 minHeight: '35vh',
                                 height: 'calc(500 / 1676 * 100vw)',
@@ -96,9 +131,20 @@ const SupplySection = () => {
                                 backgroundRepeat: 'no-repeat',
                             }}
                         >
-                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}> {/* Sombra agregada */}
+                            <div className="overlay" style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: '100%',
+                                backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                                zIndex: 1,
+                                borderRadius: 'inherit'
+                            }}></div>
+
+                            <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)', zIndex: 2 }}>
                                 <strong className="fs-3 d-block mb-2">Insumos para Impresión</strong>
-                                <p className="mb-4">Ofrecemos una amplia gama de insumos para impresión de alta calidad.</p>
+                                <p className="mb-4" style={{ fontWeight: '600' }}>Ofrecemos una amplia gama de insumos para impresión de alta calidad.</p>
                                 <Link to="/supplies" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                             </div>
                         </div>
