@@ -1,4 +1,5 @@
-import { Hero, SupplySection, ProductGallery } from "../sections/index.js";
+import { Hero, SupplySection, ProductGallery, Brand, Footer } from "../sections/index.js";
+
 
 const Home = () => {
     return (
@@ -6,6 +7,8 @@ const Home = () => {
             <Hero />
             <SupplySection />
             <ProductGallery />
+            <Brand />
+            <Footer />
         </>
     );
 };

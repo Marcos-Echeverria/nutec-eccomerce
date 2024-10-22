@@ -7,8 +7,8 @@ const SupplySection = () => {
     return (
         <div className="position-relative">
             {/* Blur en la parte superior */}
-            <div 
-                className="blur-effect position-absolute w-100" 
+            <div
+                className="blur-effect position-absolute w-100"
                 style={{
                     top: '-30px',    // Posición por encima del contenido
                     height: '40px', // Altura del blur
@@ -20,19 +20,23 @@ const SupplySection = () => {
 
             <Layout>
                 <h2 className="text-center mt-5 mb-4" style={{ fontWeight: '700', textShadow: '2px 2px 3px rgba(0, 0, 0, 0.3)' }}>Nuestros Productos</h2>
-                
+
                 <Row className="mb-4">
                     {/* Tintas */}
                     <Col md={6} className="mb-4">
-                        <div 
+                        <div
                             className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                             style={{
                                 minHeight: '60vh',    // Incremento de altura mínima
                                 height: 'calc(1044 / 952 * 55vw)', // Relación de aspecto 1044x952 en pantallas grandes
+                                backgroundImage: 'url(/Camaleon.jpg)',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
                             }}
                         >
                             <div>
-                                <strong className="fs-3 d-block mb-2">Tintas</strong>
+                                <strong className="fs-3 d-block mb-2">Tintas Nutec</strong>
                                 <p className="mb-4">La tinta Nutec es una tinta de calidad premium, que ofrece el más alto nivel de estabilidad de impresión.</p>
                                 <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link> {/* Link a /products */}
                             </div>
@@ -44,7 +48,7 @@ const SupplySection = () => {
                         <Row className="mb-4">
                             {/* Equipos */}
                             <Col md={12} className="mb-4">
-                                <div 
+                                <div
                                     className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                                     style={{
                                         minHeight: '35vh',  // Incremento de altura mínima
@@ -61,7 +65,7 @@ const SupplySection = () => {
 
                             {/* Servicio Técnico */}
                             <Col md={12}>
-                                <div 
+                                <div
                                     className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                                     style={{
                                         minHeight: '35vh',  // Incremento de altura mínima
@@ -82,7 +86,7 @@ const SupplySection = () => {
                 {/* Insumos para Impresión */}
                 <Row>
                     <Col md={12}>
-                        <div 
+                        <div
                             className="bg-dark text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-end"
                             style={{
                                 minHeight: '35vh',   // Incremento de altura mínima
