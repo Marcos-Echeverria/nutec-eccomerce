@@ -36,11 +36,11 @@ const ContactUs = () => {
                     <div className="d-flex flex-column" style={{ marginTop: 'auto', gap: '2rem', marginLeft: '1rem' }}>
                         <div className="mb-3">
                             <Phone size={20} className="me-2" />
-                            <span>1123751804</span>
+                            <span>+54 9 11 2375-1804</span>
                         </div>
                         <div className="mb-3">
                             <Mail size={20} className="me-2" />
-                            <span>info@axiondigital.cl</span>
+                            <span>fernando@axndigital.com.ar</span>
                         </div>
                         <div className="mb-3">
                             <MapPin size={20} className="me-2" />
