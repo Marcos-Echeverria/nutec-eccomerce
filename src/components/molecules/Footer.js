@@ -15,8 +15,8 @@ export const Footer = () => {
                                     Dirección
                                 </p>
                                 <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
-                                    <CDBLink href="/about" className="text-white">Av. Rivadavia 123</CDBLink>
-                                    <CDBLink href="/contact" className="text-white">Distrito 1, Buenos Aires</CDBLink>
+                                    <CDBLink href="/about" className="text-white">Chubut 1332</CDBLink>
+                                    <CDBLink href="/contact" className="text-white">Barracas, CABA</CDBLink>
                                     <CDBLink href="/blog" className="text-white">Argentina</CDBLink>
                                 </CDBBox>
                             </CDBBox>
@@ -27,9 +27,9 @@ export const Footer = () => {
                                     Contacto
                                 </p>
                                 <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                                    <CDBLink href="/pricing" className="text-white">Tel: +1 408 247 8529</CDBLink>
-                                    <CDBLink href="/services" className="text-white">IG: @axiondigital</CDBLink>
-                                    <CDBLink href="/faq" className="text-white">Email: info@axion.com</CDBLink>
+                                    <CDBLink href="/pricing" className="text-white">Tel: +54 9 11 2375-1804</CDBLink>
+                                    <CDBLink href="/services" className="text-white">IG: @axnnutec</CDBLink>
+                                    <CDBLink href="/faq" className="text-white">Email: fernando@axndigital.com.ar</CDBLink>
                                 </CDBBox>
                             </CDBBox>
                         </CDBBox>
