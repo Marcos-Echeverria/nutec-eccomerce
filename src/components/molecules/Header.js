@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,7 +29,7 @@ function Header() {
                         <Link className="fs-5 mx-2 nav-link" to="/products">Equipos</Link>
                         <Link className="fs-5 mx-2 nav-link" to="/services">Servicio Técnico</Link>
                         <Link className="fs-5 mx-2 nav-link" to="/supplies">Insumos</Link>
-                        <Link className="fs-5 mx-2 nav-link" to="/contact-us">Contacto</Link>
+                        <HashLink smooth to="/#contact-us" className="fs-5 mx-2 nav-link">Contacto</HashLink>
                     </Nav>
                 </Container>
             </Navbar>
