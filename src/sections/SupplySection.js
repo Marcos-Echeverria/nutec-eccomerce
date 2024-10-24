@@ -49,7 +49,7 @@ const SupplySection = () => {
                             <div style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)', zIndex: 2 }}>
                                 <strong className="fs-3 d-block mb-2">Tintas Nutec</strong>
                                 <p className="mb-4" style={{ fontWeight: '600' }}>La tinta Nutec es una tinta de calidad premium, que ofrece el más alto nivel de estabilidad de impresión.</p>
-                                <Link to="/products" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
+                                <Link to="/inks" className="btn btn-outline-light rounded-pill px-4 py-2">Más info</Link>
                             </div>
                         </div>
                     </Col>

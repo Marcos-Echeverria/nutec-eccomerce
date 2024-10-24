@@ -99,3 +99,243 @@ body {
 .Insumos{
     background-image: url(./assets/images/Insumos.webp);
 }
+
+.ink-banner-section {
+    position: relative;
+    min-height: 80vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+
+.ink-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/images/inkBanner.webp') no-repeat center;
+    background-size: cover;
+    background-position: center; /* Ajusta este valor para subir o bajar */
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+/* Asegura que las cartas ocupen todo el ancho de la columna */
+.ink-card {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 500px; /* Aumentar el tamaño mínimo de la tarjeta */
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial suave */
+    transition: box-shadow 0.3s ease; /* Definir transición en el estado normal */
+  }
+
+  /* Sombra más profunda cuando se hace hover */
+  .ink-card:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en el hover */
+  }
+  
+  
+  /* Imagen como fondo de la tarjeta */
+  .ink-image-as-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen en la tarjeta */
+    border-radius: 20px; /* Mantiene la imagen redondeada */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  /* Contenido dentro del overlay */
+  .ink-content {
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    border-radius: 20px; /* Redondear la tarjeta completa */
+    color: white;
+    padding-top: 20px; /* Añadir espacio interno al contenido */
+    padding-bottom: 20px; /* Añadir espacio en la parte inferior */
+  }
+  
+  .ink-button {
+    opacity: 1;
+    margin-top: 10px;
+    background-color: transparent; /* Fondo transparente */
+    border: white solid 1px; /* Borde blanco */
+    color: white; /* Texto blanco */
+  }
+  
+  /* Hover explícitamente vacío */
+  .ink-button:hover {
+    background-color: transparent; /* Sin cambio de fondo */
+    color: white; /* Mantiene el color del texto */
+    border: white solid 1px; /* Mantiene el borde */
+  }
+
+  .ink-detail-hero {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    margin-top: 20px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .certifications img.certification-logo {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .product-image {
+      max-width: 80%;
+    }
+  }
+
+  .ink-compatibility-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .ink-compatibility-section h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .ink-compatibility-section h5 {
+    font-weight: 600;
+  }
+  
+  .ink-compatibility-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .ink-compatibility-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .ink-detail-footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .ink-detail-footer img {
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .footer-overlay {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .footer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .footer-content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-content p {
+    font-size: 1.2rem;
+  }
+  
+  .printer-banner-section {
+    position: relative;
+    min-height: 80vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+
+.printer-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/images/printers_hero_bg.webp') no-repeat center;
+    background-size: cover;
+    background-position: center; /* Ajusta este valor para subir o bajar */
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+/* Sombra y bordes redondeados para la tarjeta */
+.printer-card {
+  border-radius: 20px; /* Bordes más redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  overflow: hidden; /* Asegura que los bordes redondeados no se vean cortados */
+}
+
+/* Overlay oscuro encima de las imágenes */
+.printer-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurecimiento con 50% de opacidad */
+  z-index: 1; /* Coloca el overlay por encima de la imagen */
+  transition: background 0.3s ease; /* Transición suave para el overlay */
+}
+
+/* Hacer que el overlay desaparezca al hacer hover */
+.printer-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.2); /* Menos oscuro al hacer hover */
+}
+
+/* Espacio entre equipos con una línea de separación */
+.with-line {
+  border-bottom: 1px solid #ddd; /* Línea gris claro entre equipos */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Detalles de la imagen de los equipos */
+.printer-details {
+  padding-left: 20px;
+}
+
+/* Ajuste para las imágenes */
+.printer-product-grid img {
+  object-fit: cover;
+  height: 100%;
+}
