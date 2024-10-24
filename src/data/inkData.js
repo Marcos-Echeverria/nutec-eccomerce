@@ -1,10 +1,9 @@
-import tintaTopazT15_RG from '../assets/images/tintas/T15-RG-2L-Packshot_CMYK.png'
+import tintaTopazT15_RG from '../assets/images/Tintas/T15-RG-2L-Packshot_CMYK.png'
 import tintaTopazT35SK_LS from '../assets/images/tintas/T35_sin_light_SK-LS_5L_Bottles_bidon.png'
 import tintaDiamondD10_ESM from '../assets/images/tintas/IMG-20230802-WA0025.png'
 import tintaRubyR10_RTR from '../assets/images/tintas/ruby.png'
 import tintaAquamarineAQ10_DST_HC from '../assets/images/tintas/aq10.png'
 import tintaDiamondD15TRV2 from '../assets/images/tintas/Diamond_D15_TRV2.png'
-
 import certificadoAdidas from '../assets/images/certificados/certificado_adidas.png'
 import certificadoEco from '../assets/images/certificados/certificado_eco.png'
 import certificadHC from '../assets/images/certificados/certificado_hc.png'
@@ -96,7 +95,7 @@ const inkData = [
             { "brand": "EPSON", "printhead": ["DX4", "DX5", "DX6", "DX7", "5113"] }
         ],
         "styles": {
-            "colors": [ "#000201", "#030708", "#030C0D", "#071518", "#09282E", "#104953", "#0EA0B7" ]
+            "colors": ["#000201", "#030708", "#030C0D", "#071518", "#09282E", "#104953", "#0EA0B7"]
         }
     }
 ]
