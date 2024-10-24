@@ -1,4 +1,4 @@
-import tintaTopazT15_RG from '../assets/images/Tintas/T15-RG-2L-Packshot_CMYK.png'
+import tintaTopazT15_RG from '../assets/images/tintas/T15-RG-2L-Packshot_CMYK.png'
 import tintaTopazT35SK_LS from '../assets/images/tintas/T35_sin_light_SK-LS_5L_Bottles_bidon.png'
 import tintaDiamondD10_ESM from '../assets/images/tintas/IMG-20230802-WA0025.png'
 import tintaRubyR10_RTR from '../assets/images/tintas/ruby.png'
