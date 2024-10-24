@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Inks, Printers, Services, Supplies } from '../pages/index.js';
+import { Home, Inks, InkDetail, Printers, Services, Supplies } from '../pages/index.js';
 import { Header, Footer } from "../components/molecules/index.js";
 import { ScrollToTop } from "../components/atoms/index.js";
 
@@ -16,6 +16,7 @@ const AppRoutes = () => {
                 <Route path="/printers" element={<Printers />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/supplies" element={<Supplies />} />
+                <Route path="/inks/:id" element={<InkDetail />} />
             </Routes>
             <Footer />
         </Router>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap';
-
+import { useNavigate } from 'react-router-dom'; // Importamos useNavigate para la navegación
 import { Layout } from '../../components/molecules/index.js';
 import { inkData } from '../../data/index.js';
 
 const ProductGrid = () => {
+  const navigate = useNavigate(); // Creamos la función de navegación
+
   return (
     <Layout>
       <Row className="justify-content-center">
@@ -20,7 +22,14 @@ const ProductGrid = () => {
                       ? ink.description.substring(0, 50) + '...'
                       : ink.description}
                   </Card.Text>
-                  <Button variant="light" className="rounded-pill ink-button align-self-end">Ver más</Button>
+                  {/* Usamos navigate para redirigir a la página de detalles de la tinta */}
+                  <Button 
+                    variant="light" 
+                    className="rounded-pill ink-button align-self-end"
+                    onClick={() => navigate(`/inks/${ink.id}`)} // Navegamos a la ruta dinámica de tinta
+                  >
+                    Ver más
+                  </Button>
                 </div>
               </div>
             </Card>

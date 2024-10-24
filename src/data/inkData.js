@@ -12,6 +12,7 @@ import certificadoOeko from '../assets/images/certificados/certificado_oeko.png'
 
 const inkData = [
     {
+        "id": 1,
         "name": "Topaz T15-RG",
         "imageUrl": tintaTopazT15_RG,
         "certifiedBy": [],
@@ -25,6 +26,7 @@ const inkData = [
         }
     },
     {
+        "id": 2,
         "name": "Topaz T35 SK-LS",
         "imageUrl": tintaTopazT35SK_LS,
         "certifiedBy": [],
@@ -42,38 +44,35 @@ const inkData = [
         }
     },
     {
+        "id": 3,
         "name": "Diamond D10-ESM",
         "imageUrl": tintaDiamondD10_ESM,
         "certifiedBy": [certificadoEco],
         "description": "La tinta Diamond D10-ESM ha sido específicamente diseñada como un sustituto perfecto para las tintas Roland Eco Sol Max®, ofreciendo una alternativa confiable y de alto rendimiento. Su fórmula avanzada proporciona una mayor resistencia a la abrasión y a productos químicos, lo que garantiza una durabilidad superior en entornos exigentes. Además, la Diamond D10-ESM destaca por su excelente compatibilidad con una amplia gama de medios de impresión, incluyendo sustratos autoadhesivos y flexibles, asegurando resultados impecables en cada proyecto con un acabado profesional y duradero.",
         "features": ['Fórmula y color compatibles con Roland Eco Sol Max®', 'No requiere limpieza ni perfilado al cambiar de tinta original', 'Secado rápido y sin olor', 'Excelente durabilidad exterior', 'Mayor resistencia a abrasión y químicos', 'Garantía global de NUtec Digital para terceros'],
         "compatibilitys": [
-            { "brand": "EPSON", "printhead": "DX4" },
-            { "brand": "EPSON", "printhead": "DX5" },
-            { "brand": "EPSON", "printhead": "DX6" },
-            { "brand": "EPSON", "printhead": "DX7" },
+            { "brand": "EPSON", "printhead": ["DX4", "DX5", "DX6", "DX7"] }
         ],
         "styles": {
             "colors": ["#000201", "#02071f", "#040c3d", "#061364", "#091a8c", "#0b1faa", "#0d24c8"]
         }
     },
     {
+        "id": 4,
         "name": "Ruby R10-RTR",
         "imageUrl": tintaRubyR10_RTR,
         "certifiedBy": [],
         "description": "La Ruby R10-RTR es una tinta de alto rendimiento, especialmente diseñada para aplicaciones tanto en superficies rígidas como de rollo a rollo, y está optimizada para el uso con lámparas LED UV. Esta formulación destaca por su excelente desempeño en entornos de impresión exigentes y de alta velocidad, garantizando una producción rápida y eficiente. Además, ha sido desarrollada para ofrecer una amplia compatibilidad con diversos tipos de medios, lo que la convierte en una opción versátil para una gran variedad de proyectos. Su gama de colores superior proporciona imágenes más brillantes y vibrantes, asegurando una calidad visual impresionante en cada impresión.",
         "features": ['Diseñado para aplicaciones rígidas y rollo a rollo', 'Optimizado para lámparas UV LED', 'Excelente adhesión', 'Garantía del sistema de suministro de tinta (IDS) de NUtec Digital'],
         "compatibilitys": [
-            { "brand": "EPSON", "printhead": "DX4" },
-            { "brand": "EPSON", "printhead": "DX5" },
-            { "brand": "EPSON", "printhead": "DX6" },
-            { "brand": "EPSON", "printhead": "DX7" },
+            { "brand": "EPSON", "printhead": ["DX4", "DX5", "DX6", "DX7"] }
         ],
         "styles": {
             "colors": ["#000201", "#120201", "#230201", "#3b0200", "#530100", "#640100", "#760100"]
         }
     },
     {
+        "id": 5,
         "name": "Diamond D15 TRV2",
         "imageUrl": tintaDiamondD15TRV2,
         "certifiedBy": [certificadoEco],
@@ -87,20 +86,17 @@ const inkData = [
         }
     },
     {
+        "id": 6,
         "name": "Aquamarine AQ10-DST-HC",
         "imageUrl": tintaAquamarineAQ10_DST_HC,
         "certifiedBy": [certificadoAdidas, certificadHC, certificadoOeko],
         "description": "La Aquamarine AQ10-DST-HC es una tinta de sublimación de alta densidad diseñada específicamente para su uso en papeles de transferencia, tanto con recubrimiento como sin él. Su avanzada formulación permite una mayor productividad, facilitando la impresión a alta velocidad sin comprometer la calidad. Además, esta tinta optimiza el consumo, generando imágenes vibrantes y nítidas con una cantidad reducida de tinta, lo que maximiza la eficiencia en cada trabajo.",
         "features": ['Diseñada para impresión directa y por transferencia', 'Compatible con papel de transferencia ligero, bond o cuché', 'Ahorro de tinta con mayor eficiencia de transferencia', 'Mayor velocidad y productividad', 'Excelente confiabilidad y gama de colores', 'Secado rápido para alta velocidad'],
         "compatibilitys": [
-            { "brand": "EPSON", "printhead": "DX4" },
-            { "brand": "EPSON", "printhead": "DX5" },
-            { "brand": "EPSON", "printhead": "DX6" },
-            { "brand": "EPSON", "printhead": "DX7" },
-            { "brand": "EPSON", "printhead": "5113" },
+            { "brand": "EPSON", "printhead": ["DX4", "DX5", "DX6", "DX7", "5113"] }
         ],
         "styles": {
-            "colors": [ "000201", "030708", "030C0D", "071518", "09282E", "104953", "0EA0B7" ]
+            "colors": [ "#000201", "#030708", "#030C0D", "#071518", "#09282E", "#104953", "#0EA0B7" ]
         }
     }
 ]

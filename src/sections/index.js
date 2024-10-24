@@ -6,3 +6,6 @@ export { default as ContactUs } from "./ContactUs";
 export { default as InkHero } from './Inks/Hero.js';
 export { default as InkProductIntro } from './Inks/ProductIntro.js'
 export { default as InkProductGrid } from './Inks/ProductGrid.js'
+export { default as InkDetailHero } from './Inks/details/Hero.js'
+export { default as InkDetailCompatibilitys } from './Inks/details/Compatibilitys.js'
+export { default as InkDetailFooter } from './Inks/details/Footer.js'

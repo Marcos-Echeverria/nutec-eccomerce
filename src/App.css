@@ -177,5 +177,101 @@ body {
     border: white solid 1px; /* Mantiene el borde */
   }
 
+  .ink-detail-hero {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    margin-top: 20px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .certifications img.certification-logo {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .product-image {
+      max-width: 80%;
+    }
+  }
+
+  .ink-compatibility-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .ink-compatibility-section h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .ink-compatibility-section h5 {
+    font-weight: 600;
+  }
+  
+  .ink-compatibility-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .ink-compatibility-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .ink-detail-footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .ink-detail-footer img {
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .footer-overlay {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .footer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .footer-content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-content p {
+    font-size: 1.2rem;
+  }
+  
   
   
