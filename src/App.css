@@ -99,3 +99,83 @@ body {
 .Insumos{
     background-image: url(./assets/images/Insumos.webp);
 }
+
+.ink-banner-section {
+    position: relative;
+    min-height: 80vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+
+.ink-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/images/inkBanner.webp') no-repeat center;
+    background-size: cover;
+    background-position: center; /* Ajusta este valor para subir o bajar */
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+/* Asegura que las cartas ocupen todo el ancho de la columna */
+.ink-card {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 500px; /* Aumentar el tamaño mínimo de la tarjeta */
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial suave */
+    transition: box-shadow 0.3s ease; /* Definir transición en el estado normal */
+  }
+
+  /* Sombra más profunda cuando se hace hover */
+  .ink-card:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en el hover */
+  }
+  
+  
+  /* Imagen como fondo de la tarjeta */
+  .ink-image-as-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen en la tarjeta */
+    border-radius: 20px; /* Mantiene la imagen redondeada */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  /* Contenido dentro del overlay */
+  .ink-content {
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    border-radius: 20px; /* Redondear la tarjeta completa */
+    color: white;
+    padding-top: 20px; /* Añadir espacio interno al contenido */
+    padding-bottom: 20px; /* Añadir espacio en la parte inferior */
+  }
+  
+  .ink-button {
+    opacity: 1;
+    margin-top: 10px;
+    background-color: transparent; /* Fondo transparente */
+    border: white solid 1px; /* Borde blanco */
+    color: white; /* Texto blanco */
+  }
+  
+  /* Hover explícitamente vacío */
+  .ink-button:hover {
+    background-color: transparent; /* Sin cambio de fondo */
+    color: white; /* Mantiene el color del texto */
+    border: white solid 1px; /* Mantiene el borde */
+  }
+
+  
+  

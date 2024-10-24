@@ -34,8 +34,8 @@ function Header() {
                     
                     {/* Links alineados a la derecha */}
                     <Nav className="d-flex">
-                        <Link className="fs-5 mx-2 nav-link" to="/products">Tintas</Link>
-                        <Link className="fs-5 mx-2 nav-link" to="/products">Equipos</Link>
+                        <Link className="fs-5 mx-2 nav-link" to="/inks">Tintas</Link>
+                        <Link className="fs-5 mx-2 nav-link" to="/printers">Equipos</Link>
                         <Link className="fs-5 mx-2 nav-link" to="/services">Servicio Técnico</Link>
                         <Link className="fs-5 mx-2 nav-link" to="/supplies">Insumos</Link>
                         <HashLink smooth to="/#contact-us" className="fs-5 mx-2 nav-link">Contacto</HashLink>

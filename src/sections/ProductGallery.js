@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 
-import tintaDiamondD10 from '../assets/images/Tintas/diamond-d10.png';
-import tintaAmethyst450 from '../assets/images/Tintas/a20.png';
-import mativeLightChair from '../assets/images/Tintas/ruby-sol.png';
-import sidSingGalaxy from '../assets/images/Tintas/botellitad10.png';
+import tintaDiamondD10 from '../assets/images/tintas/diamond-d10.png';
+import tintaAmethyst450 from '../assets/images/tintas/a20.png';
+import mativeLightChair from '../assets/images/tintas/ruby-sol.png';
+import sidSingGalaxy from '../assets/images/tintas/botellitad10.png';
 
 const ProductGallery = () => {
     const products = [
