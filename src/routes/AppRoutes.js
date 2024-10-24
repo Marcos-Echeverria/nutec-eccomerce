@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home, Inks, InkDetail, Printers, Services, Supplies } from '../pages/index.js';
 import { Header, Footer } from "../components/molecules/index.js";
-import { ScrollToTop } from "../components/atoms/index.js";
+import { ScrollToTop, ButtonWppScroll } from "../components/atoms/index.js";
 
 
 
@@ -9,6 +9,7 @@ const AppRoutes = () => {
     return (
         <Router>
             <ScrollToTop />
+            <ButtonWppScroll />
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
