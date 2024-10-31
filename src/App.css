@@ -118,7 +118,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./assets/images/inkBanner.webp') no-repeat center;
+    background: url('./assets/images/bannerInk.jpg') no-repeat center;
     background-size: cover;
     background-position: center; /* Ajusta este valor para subir o bajar */
     filter: blur(10px); 
@@ -339,3 +339,5 @@ body {
   object-fit: cover;
   height: 100%;
 }
+
+/* Responsive */
