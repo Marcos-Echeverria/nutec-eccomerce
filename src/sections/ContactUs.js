@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ContactForm } from '../components/molecules/index.js' 
-import { SocialButton } from '../components/atoms/index.js' 
+import { ContactForm } from '../components/molecules/index.js'
+import { SocialButton } from '../components/atoms/index.js'
 import { Mail, Phone, MapPin, } from 'lucide-react';
 
 
@@ -60,7 +60,7 @@ const ContactUs = () => {
                         backdropFilter: 'blur(13px)', // Ajusta el valor para cambiar el nivel de desenfoque
                         backgroundColor: 'rgba(255, 255, 255, 0.5)', // Color de fondo con transparencia
                     }}
-                    md={7} className="bg-white p-4">
+                    md={7} className="form-responsive bg-white p-4">
                     <ContactForm />
                 </Col>
             </Row>

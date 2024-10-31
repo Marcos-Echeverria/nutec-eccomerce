@@ -346,4 +346,7 @@ body {
   .btn-wpp-scroll {
       display: none;
   }
+  .form-responsive{
+    display: none;
+  }
 }
