@@ -21,13 +21,13 @@ function ButtonWppScroll() {
         <>
             <Button
                 variant="outline-light"
-                className="rounded-circle"
+                className="rounded-circle btn-wpp-scroll"
                 style={{
                     backgroundColor: '#25D366',
                     position: 'fixed',
                     bottom: '10px',
                     right: '20px',
-                    zIndex: 1000, // Para asegurarte de que el botón esté encima de otros elementos
+                    zIndex: 1000,
                     padding: '10px',
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
                     border: 'none',

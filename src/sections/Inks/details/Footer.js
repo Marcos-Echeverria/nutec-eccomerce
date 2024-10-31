@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import inkDetailFooter from '../../../assets/images/inkDetailfooter.webp';
 
 const Footer = () => {
