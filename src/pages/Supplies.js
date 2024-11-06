@@ -32,7 +32,6 @@ const productos = [
         descripcion: "La Lona Blockout es una lona imprimible de ambas caras, ligera y resistente. Es ideal para usarse en impresiones de gran tamaño y altura como publicidades de doble exposición y reducir los costos de realización.",
         imagen: Blackout,
     },
-
 ];
 
 const Insumos = () => {
@@ -42,34 +41,34 @@ const Insumos = () => {
             {/* Sección de Insumos para Impresión */}
             <section style={{ marginBottom: '60px' }}>
                 <h2 style={{
-                    fontSize: '36px', // Aumentar el tamaño de la fuente
+                    fontSize: '2.5rem',
                     textAlign: 'center',
                     marginBottom: '20px',
-                    color: '#333', // Cambiar el color del texto
-                    fontWeight: 'bold', // Hacer el texto más audaz
-                    textTransform: 'uppercase', // Transformar el texto a mayúsculas
-                    letterSpacing: '1px', // Espaciado entre letras
-                    position: 'relative' // Para la sombra
+                    color: '#333',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
+                    position: 'relative'
                 }}>
                     Insumos para Impresión
                     <span style={{
                         display: 'block',
-                        width: '10rem', // Ancho de la línea
-                        height: '4px', // Altura de la línea
-                        backgroundColor: '#007BFF', // Color de la línea
-                        margin: '10px auto', // Centrar la línea
-                        borderRadius: '2px' // Esquinas redondeadas
+                        width: '10rem',
+                        height: '4px',
+                        backgroundColor: '#007BFF',
+                        margin: '10px auto',
+                        borderRadius: '2px'
                     }} />
                 </h2>
 
                 <p style={{
                     textAlign: 'center',
-                    fontSize: '20px', // Aumentar el tamaño de la fuente
+                    fontSize: '1.25rem',
                     color: '#666',
-                    fontStyle: 'italic', // Estilo de fuente en cursiva
-                    maxWidth: '600px', // Limitar el ancho del texto
-                    margin: '0 auto', // Centrar el párrafo
-                    lineHeight: '1.6' // Aumentar el espacio entre líneas
+                    fontStyle: 'italic',
+                    maxWidth: '600px',
+                    margin: '0 auto',
+                    lineHeight: '1.6'
                 }}>
                     Encuentra los mejores insumos para tus necesidades de impresión.
                 </p>
@@ -78,33 +77,36 @@ const Insumos = () => {
             </section>
 
             {/* Sección de Vinilos */}
-            <section style={{ marginBottom: '60px', alignSelf: 'center', justifySelf: 'center' }}>
-                <h2 style={{ fontSize: '32px', textAlign: 'center', marginBottom: '20px' }}>Vinilos</h2>
-                <p style={{ textAlign: 'center', fontSize: '18px', color: '#666' }}>
+            <section style={{ marginBottom: '60px', textAlign: 'center' }}>
+                <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Vinilos</h2>
+                <p style={{ fontSize: '1.125rem', color: '#666' }}>
                     Gran variedad de vinilos de la mejor calidad.
                 </p>
-                <div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <img
                         src={Vinilos}
                         alt="VinilosImg"
-                        style={{ display: 'flex', justifyContent: 'center' }}
+                        style={{ maxWidth: '90%', height: 'auto' }}
                     />
                 </div>
             </section>
+
             <hr style={{ border: 'none', borderTop: '2px solid #ccc', margin: '40px 0' }} />
+
             {/* Sección de Accesorios */}
-            <section style={{ marginBottom: '60px', alignSelf: 'center', justifySelf: 'center', marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '32px', textAlign: 'center', marginBottom: '20px' }}>Accesorios</h2>
-                <p style={{ textAlign: 'center', fontSize: '18px', color: '#666' }}>
+            <section style={{ marginBottom: '60px', textAlign: 'center', marginTop: '3rem' }}>
+                <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Accesorios</h2>
+                <p style={{ fontSize: '1.125rem', color: '#666' }}>
                     Todo tipo de accesorios para complementar tus proyectos.
                 </p>
-                <img
-                    src={Accesorios}
-                    alt="AccesoriosImg"
-                    style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}
-                />
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <img
+                        src={Accesorios}
+                        alt="AccesoriosImg"
+                        style={{ maxWidth: '90%', height: 'auto', marginTop: '3rem' }}
+                    />
+                </div>
             </section>
-
         </div>
     );
 };

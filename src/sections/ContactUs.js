@@ -43,6 +43,10 @@ const ContactUs = () => {
                             <span>fernando@axndigital.com.ar</span>
                         </div>
                         <div className="mb-3">
+                            <Mail size={20} className="me-2" />
+                            <span>Martina@axndigital.com.ar</span>
+                        </div>
+                        <div className="mb-3">
                             <MapPin size={20} className="me-2" />
                             <span>Chubut 1332 - Barracas</span>
                         </div>

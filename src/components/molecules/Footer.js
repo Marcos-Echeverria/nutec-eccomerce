@@ -15,7 +15,7 @@ export const Footer = () => {
                                     Dirección
                                 </p>
                                 <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
-                                    <CDBLink href="/about" className="text-white">Chubut 1332</CDBLink>
+                                    <CDBBox href="/about" className="text-white">Chubut 1332</CDBBox>
                                     <CDBLink href="/contact" className="text-white">Barracas, CABA</CDBLink>
                                     <CDBLink href="/blog" className="text-white">Argentina</CDBLink>
                                 </CDBBox>

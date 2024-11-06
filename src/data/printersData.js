@@ -1,5 +1,5 @@
 import printerDTFUV from '../assets/images/impresoras/printer_DTF_UV.png'
-import printerKJ1602 from '../assets/images/impresoras/printer_kj_1620.png'
+import printerKJ1602 from '../assets/images/impresoras/printer_kj_1620.jpg'
 import printerKJ1803 from '../assets/images/impresoras/printer_kj_1803UV.png'
 import printerKJ3202 from '../assets/images/impresoras/printer_kj_3202.png'
 
@@ -23,7 +23,7 @@ const printersData = [
     },
     {
         "name": "KJ-3202",
-       "image": printerKJ3202,
+        "image": printerKJ3202,
         "data": dataPrinterKJ3202,
     },
     {
